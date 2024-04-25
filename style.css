@@ -1,22 +1,22 @@
-@import  url( 'https://fonts.googleapis.com/css2?family=chakra+petch:wght@400;700&display=swap');
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #6fff57;
-    --branco: #e72828;
-    --botão-ativo: #34375E;
-    --botão-inativo: rgba(157, 15, 223, 0.904);
-    --texto-fundo: rgba(37, 37, 39, 0.993);
-
-
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
-.body{
+
+body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'chakra petch' ,sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
-.conteudo-principal{
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,57 +26,51 @@
     margin: 0 auto;
 }
 
-.titulo-principal{
+.titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 32px%;
-    
-
-    .titulo-principal span{
-        color: var(--verde);
+    font-size: 32px;
 }
 
-.botao{
-    font-family: "crakra petch", sans-serif;
-    background-color: var(--botão-inativo);
+.titulo-principal span {
+    color: var(--verde);
+}
+
+.botao {
+    font-family: "Crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
     justify-content: center;
-    padding: lem;
+    padding: 1em;
     font-size: 18px;
     align-items: center;
-awidth: 100%;
-border: bottom: 4px solid var(--botão-ativo);
-border-left: 2px solid var(--botao-ativo);
-border-rigth: 2px solid var(--botao-ativo);
-border-top: none;
-
-
-
-.botao:first-child{
-    border: -radius:40px 40px 0 0;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.botoes{
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
     display: block;
 }
 
-.ativo{
-    background-color: var(--botão-ativo);
-    border: bottom: 4px solid var(--verde);
-}
 
-
-
-@media screen and(min-width: 768px) {
-    .botoes{
+@media screen and (min-width: 768px) {
+    .botoes {
         display: flex;
     }
-   .botoes::first-child{
-    border-radius: 40px 0 0 0;
-}
-.botao:last-child{
-    border-radius: 0 40px 0 0;
-}
 
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }

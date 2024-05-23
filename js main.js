@@ -13,7 +13,6 @@ for (let i = 0; i < botoes.length; i++) {
         textos[i].classList.add("ativo");
     }
 }
-
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2020-10-05T00:00:00");
 const tempoObjetivo2 = new Date("2023-12-05T00:00:00");
